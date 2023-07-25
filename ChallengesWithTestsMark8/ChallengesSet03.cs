@@ -16,13 +16,7 @@ namespace ChallengesWithTestsMark8
                     return true;
                 
                 }
-                else 
-                {
-                
-                    return false;
-                }
-
-            
+          
             }
 
             return false;
@@ -108,7 +102,7 @@ namespace ChallengesWithTestsMark8
         {
             var list = new List<int>();
             
-            for (int i = 0; i < 100l i++) 
+            for (int i = 0; i < 100; i++) 
             {
                 if(i % 2 != 0)
                 {

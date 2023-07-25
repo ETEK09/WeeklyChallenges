@@ -12,14 +12,14 @@ namespace ChallengesWithTestsMark8
 
             foreach (var number in numbers)
             {
-                if (num % 2 == 0)
+                if (number % 2 == 0)
                 {
-                    sum += num;
+                    sum += number;
 
                 }
                 if (number % 2 != 0)
                 {
-                    sum -= num;
+                    sum -= number;
 
                 }
 
@@ -31,26 +31,17 @@ namespace ChallengesWithTestsMark8
 
         public int GetLengthOfShortestString(string str1, string str2, string str3, string str4)
         {
-            var List = new List<int>() { number1, number2.number3, number4, };
+            var List = new List<int>() { str1.Length, str2.Length, str3.Length, str4.Length };
 
             return List.Min();
         }
 
         public int GetSmallestNumber(int number1, int number2, int number3, int number4)
         {
-           var smallest = number1;
 
-            var list = new List<int>() { number2, number3, number4, smallest };
-
-            for (int i=0; i<list.Count; i++) 
-            { 
-                if(list[i] = smallest) 
-                {
-                    smallest = list[i];
-                
-                } 
-            }
-            return smallest;
+            var list = new List<int>() { number1, number2, number3, number4 };
+     
+            return list.Min();
         }
 
         public void ChangeBusinessNameTo_TrueCoders(Business biz)
@@ -81,27 +72,27 @@ namespace ChallengesWithTestsMark8
 
             var count = 0;
 
-            foreach ( var obj in objs ) 
+            foreach (var obj in objs)
             {
-                if (obj == null) 
+                if (obj == null)
                 {
                     count++;
-                
-                }
 
-                if (count >= amount)
-                {
-
-                    return true;
                 }
-                else 
-                {
-                
-                return false;
-                
-                }
-                 
             }
+
+            if (count >= majority)
+            {
+
+               return true;
+            }
+            else 
+            {
+                
+               return false;
+                
+            }
+                             
         }
 
         public double AverageEvens(int[] numbers)
