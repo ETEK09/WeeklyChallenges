@@ -122,7 +122,7 @@ namespace ChallengesWithTestsMark8
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
-            if (number == 0) 
+            if (number <= 0) 
             { 
                 return 0; 
             }
