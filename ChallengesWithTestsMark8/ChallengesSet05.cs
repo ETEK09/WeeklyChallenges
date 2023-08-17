@@ -79,7 +79,7 @@ namespace ChallengesWithTestsMark8
                 if(word.Trim().Length > 0) 
                 {
 
-                    sentence += word.Trim() + "";
+                    sentence += word.Trim() + " ";
                 
                 }
             
